@@ -1,0 +1,114 @@
+.head1{
+    box-shadow: inset 0 0 0 0 #0d252e;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .5s ease-in-out;
+  }
+  .head1:hover {
+    box-shadow: inset 350px 0 0 0 #54b3d6;
+    color: white;
+  }
+  
+  .col-sm-4
+	{
+		padding: 15px;
+	}
+	.flipy {
+  -webkit-perspective: 800;
+   width: 100%;
+   height: 240px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+.flipy .card:hover {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+.flipy .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+.flipy .card .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden ;
+  z-index: 2;
+    font-family: Georgia;
+    font-size: 3em;
+    text-align: center;
+    line-height: 200px;
+}
+.flipy .card .front {
+  position: absolute;
+  z-index: 1;
+    background: #f8f8f8;
+    color: white;
+    cursor: pointer;
+}
+.flipy .card .back {
+	-webkit-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	background: blue;
+	background: #f8f8f8;
+	color: black;
+	cursor: pointer;
+}
+/*vertical-flip*/
+.flipx {
+	-webkit-perspective: 800;
+	width: 96%;
+	height: 460px;
+	position: relative;
+	border: 1px solid #ccc;
+}
+.flipx .card:hover {
+  -webkit-transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+}
+.flipx .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+.flipx .card .face {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden ;
+	z-index: 2;
+	font-family: Georgia;
+	font-size: 3em;
+	text-align: center;
+	line-height: 200px;
+}
+.flipx .card .front {
+  position: absolute;
+  z-index: 1;
+    background: #f8f8f8;
+    color: white;
+    cursor: pointer;
+}
+.flipx .card .back {
+	-webkit-transform: rotateX(180deg);
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	-o-transform: rotateX(180deg);
+    background: blue;
+    background: #f8f8f8;
+    color: black;
+    cursor: pointer;
+}
+/*img-fold*/
